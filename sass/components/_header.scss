@@ -1,0 +1,140 @@
+// HEADER HEADER-NAV
+
+.header {
+  border-bottom: 1px solid $header-border-color;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 80px;
+}
+
+// HEADER LOGO
+
+.header__logo {
+  padding: 24px 0px;
+
+  outline-color: transparent;
+  margin-right: 93px;
+}
+
+// MAIN-NAV
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+  &__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+// MAIN-NAV LINK
+
+.main-nav__link {
+  position: relative;
+  padding: 24px 0px;
+
+  font-weight: $primary-500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $link-dark-color;
+  outline-color: transparent;
+
+  transition-property: color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $link-hover;
+    outline-color: $link-hover;
+  }
+
+  &--current {
+    color: $link-hover;
+  }
+  &--current:after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    bottom: -9px;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $link-hover;
+  }
+}
+
+// MAIN-SOCIAL
+
+.main-social {
+  display: flex;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// MAIN-SOCIAL LINK
+
+.main-social__link {
+  display: flex;
+  align-items: center;
+
+  padding: 24px 0px;
+
+  font-weight: $primary-500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $link-light-color;
+  outline-color: transparent;
+
+  transition-property: color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $link-hover;
+    fill: $link-hover;
+    outline-color: $link-hover;
+  }
+}
+
+// MAIN-SOCIAL ICON
+
+.main-social__icon {
+  margin-right: 10px;
+  fill: $link-light-color;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .main-social__link:hover &,
+  .main-social__link:focus & {
+    fill: $link-hover;
+  }
+}

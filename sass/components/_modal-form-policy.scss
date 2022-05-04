@@ -1,0 +1,53 @@
+/* MODAL POLICY */
+
+.form-policy {
+  margin-bottom: 30px;
+}
+
+.checkbox__lable {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: $primary-400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $text-light;
+
+  cursor: pointer;
+}
+
+.checkbox__link {
+  margin-left: 5px;
+}
+
+.checkbox__icon {
+  width: 16px;
+  height: 15px;
+  padding: 1px;
+  border-radius: 3px;
+  border: 2px solid $modal-close;
+
+  margin-right: 5px;
+
+  transition-property: background-color, border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-policy__check:checked + .checkbox__lable .checkbox__icon {
+  background-color: $modal-input-link;
+  border-color: transparent;
+}
+
+.form-policy__check:checked + .checkbox__lable .checkbox__icon {
+  fill: $icon-light-color;
+}
+
+.checkbox__link {
+  color: $modal-input-link;
+  text-decoration: underline;
+}

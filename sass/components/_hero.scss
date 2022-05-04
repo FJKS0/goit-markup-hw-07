@@ -1,0 +1,32 @@
+// SECTION HERO
+
+.hero {
+  height: 600px;
+  width: 1600px;
+  padding: 200px 0px;
+
+  margin: 0px auto;
+
+  background-image: linear-gradient(
+      to bottom,
+      $hero-ovelay-color,
+      $hero-ovelay-color
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-color: $hero-bg-color;
+
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: $primary-900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $title-light;
+
+  margin-bottom: 30px;
+}

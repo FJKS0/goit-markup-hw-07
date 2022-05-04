@@ -1,0 +1,105 @@
+// GLOBAL RESET
+
+body {
+  box-sizing: border-box;
+
+  font-family: $primary-font;
+  font-size: 14px;
+
+  color: $text-light;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+
+  letter-spacing: 0.03em;
+}
+
+a {
+  display: inline-block;
+
+  color: inherit;
+  text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: inline-block;
+
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+
+  box-shadow: 0px;
+  background-color: transparent;
+
+  font-family: inherit;
+
+  color: inherit;
+  fill: currentColor;
+
+  cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: transparent;
+
+  font-family: inherit;
+}
+
+svg {
+  color: inherit;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+
+  margin: 0px auto;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  position: absolute;
+  top: -100%;
+
+  pointer-events: none;
+}

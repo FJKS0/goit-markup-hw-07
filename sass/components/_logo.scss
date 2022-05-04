@@ -1,0 +1,21 @@
+// LOGO
+
+.logo {
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: $secondary-700;
+  line-height: 1.2;
+
+  color: $logo-dark-color;
+  outline-color: transparent;
+
+  transition-property: outline-color;
+
+  &:focus {
+    outline-color: $logo-accent-color;
+  }
+
+  &--accent {
+    color: $link-hover;
+  }
+}

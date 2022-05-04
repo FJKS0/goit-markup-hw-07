@@ -1,0 +1,19 @@
+// MODAL FORM
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 20px;
+    font-weight: $primary-700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: $title-dark;
+
+    margin-bottom: 12px;
+  }
+}

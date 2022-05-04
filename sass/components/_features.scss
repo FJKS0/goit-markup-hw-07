@@ -1,0 +1,32 @@
+//  SECTION FEATURES
+
+.features-list {
+  display: flex;
+  margin-right: calc(-1 * 30px);
+
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 120px;
+    border-radius: 4px;
+    background-color: $features-bg-color;
+  }
+
+  &__title {
+    font-weight: $primary-700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $title-dark;
+    margin: 30px 0px 10px 0px;
+  }
+}

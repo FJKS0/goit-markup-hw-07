@@ -1,0 +1,22 @@
+// TITLE/TEXT
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: $title-dark;
+
+  margin-bottom: 50px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $text-light;
+}

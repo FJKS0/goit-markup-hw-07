@@ -1,0 +1,102 @@
+//
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+//
+
+.form-field__label {
+  position: relative;
+
+  font-size: 12px;
+  font-weight: $primary-400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $text-light;
+}
+
+//
+
+.form-field__input {
+  padding: 11px 12px 11px 45px;
+  border: 1px solid $modal-input-border;
+
+  margin-top: 4px;
+
+  font-size: 14px;
+  font-weight: $primary-400;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  transition-property: border-color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $modal-input-border-hover;
+    outline-color: $modal-input-border-hover;
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field__input:hover + .form-field__icon,
+.form-field__input:focus + .form-field__icon,
+.form-field__input:active + .form-field__icon {
+  fill: $modal-input-border-hover;
+}
+
+/* TEXTAREA */
+
+.form-field__textarea {
+  resize: none;
+
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid $modal-input-border;
+
+  margin-top: 4px;
+
+  font-size: 14px;
+  font-weight: $primary-400;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  transition-property: border-color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $modal-input-border-hover;
+    outline-color: $modal-input-border-hover;
+  }
+
+  &::placeholder {
+    font-weight: $primary-400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $modal-input-text;
+  }
+}
